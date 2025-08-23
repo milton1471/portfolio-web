@@ -1,7 +1,7 @@
 // Portfolio Gaming - JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     // Variables globales
-    const loadingScreen = document.getElementById('loadingScreen');
+    // const loadingScreen = document.getElementById('loadingScreen');
     const themeToggle = document.getElementById('themeToggle');
     const header = document.getElementById('header');
     const navToggle = document.getElementById('navToggle');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
     
     // Estado global
-    let isLoading = true;
+    // let isLoading = true;
     let currentTheme = localStorage.getItem('theme') || 'dark';
     
     // Inicialización
