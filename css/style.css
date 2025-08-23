@@ -904,7 +904,7 @@ body {
   color: white;
   font-size: 16px;
   font-weight: bold;
-  font-family: 'Orbitron', monospace;
+  font-family: var(--font-secondary);
 }
 
 .arms {
@@ -1173,7 +1173,7 @@ body {
   color: var(--primary-color);
   font-size: 1.1rem;
   margin-bottom: 0.4rem;
-  font-family: 'Orbitron', monospace;
+  font-family: var(--font-secondary);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -1210,7 +1210,7 @@ body {
   color: var(--primary-color);
   font-size: 1.2rem;
   font-weight: 700;
-  font-family: 'Orbitron', monospace;
+  font-family: var(--font-secondary);
   line-height: 1;
 }
 
@@ -1286,7 +1286,7 @@ body {
   color: var(--primary-color);
   font-size: 1rem;
   margin-bottom: 0.4rem;
-  font-family: 'Orbitron', monospace;
+  font-family: var(--font-secondary);
 }
 
 .summary-item p {
@@ -1379,6 +1379,7 @@ body {
 .glitch {
   position: relative;
   display: inline-block;
+  font-family: var(--font-secondary);
 }
 
 /* ===== SERVICES SECTION ===== */
@@ -1828,6 +1829,7 @@ body {
   border-radius: 8px;
   font-size: 0.8rem;
   font-weight: 600;
+  font-family: var(--font-secondary);
   border: 1px solid var(--border-color);
 }
 
@@ -3281,7 +3283,7 @@ button, .btn {
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  font-family: 'Orbitron', monospace;
+  font-family: var(--font-secondary);
 }
 
 .project-tags {
@@ -3298,6 +3300,7 @@ button, .btn {
   border-radius: 12px;
   font-size: 0.75rem;
   font-weight: 600;
+  font-family: var(--font-secondary);
   border: 1px solid rgba(0, 212, 255, 0.2);
 }
 
