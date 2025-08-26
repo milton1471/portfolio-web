@@ -760,3 +760,42 @@ window.MiltonPortfolio = {
         }, 3000);
     }
 };
+
+// Agregar esto a tu archivo js/script.js
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById('themeToggle');
+    const toggleText = themeToggle?.querySelector('.toggle-text');
+    
+    if (!themeToggle || !toggleText) return;
+    
+    // Función para actualizar el texto
+    function updateToggleText() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        if (currentTheme === 'dark') {
+            toggleText.textContent = 'DARK MODE';
+        } else {
+            toggleText.textContent = 'LIGHT MODE';
+        }
+    }
+    
+    // Evento click
+    themeToggle.addEventListener('click', function() {
+        // Agregar animación
+        themeToggle.classList.add('switching');
+        
+        // Tu función de cambio de tema existente
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        
+        // Actualizar texto después de la animación
+        setTimeout(() => {
+            updateToggleText();
+            themeToggle.classList.remove('switching');
+        }, 200);
+    });
+    
+    // Inicializar
+    updateToggleText();
+});
